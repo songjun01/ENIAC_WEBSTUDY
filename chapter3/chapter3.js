@@ -1,4 +1,4 @@
-const grap=document.getElementById("Grap");       //html의 element 중에서 id가 "Grap"인 element를 찾아 grap에 저장
+/*const grap=document.getElementById("Grap");       //html의 element 중에서 id가 "Grap"인 element를 찾아 grap에 저장
 
 console.dir(grap);
 grap.innerText="Got you!";                         //title의 text 변경
@@ -50,3 +50,38 @@ function handleWindowOnline(){
     alert("ALL GOOD");
 }
 window.addEventListener("online",handleWindowOnline);
+
+
+const h1=document.querySelector("div.hello h1");
+function handleTitleClick(){
+    const currentColor=h1.style.color;
+    let newColor;
+    if (currentColor==="blue"){
+        newColor="tomato";
+    }
+    else{
+        newColor="blue";
+    }
+    h1.style.color=newColor;
+}
+h1.addEventListener("click",handleTitleClick);
+
+
+const h1=document.querySelector("div.hello h1");
+function handleTitleClick(){
+    const clickedClass="active";
+    if(h1.classList.contains(clickedClass)){
+        h1.classList.remove(clickedClass);
+    }
+    else{
+        h1.classList.add(clickedClass);
+    }
+}
+h1.addEventListener("click",handleTitleClick);*/
+
+
+const h1=document.querySelector("div.hello h1");
+function handleTitleClick(){
+    h1.classList.toggle("active");
+}
+h1.addEventListener("click",handleTitleClick);
