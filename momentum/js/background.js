@@ -6,6 +6,4 @@ const bgImage=document.createElement("img");
 
 bgImage.src=`C:/대학교/ENIAC/Web/nomadcoders chrome app/momentum/img/${chosenImage}`;
 
-console.log(bgImage);
-
 document.body.appendChild(bgImage);
